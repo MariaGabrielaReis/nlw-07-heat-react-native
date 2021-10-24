@@ -9,9 +9,14 @@ export const styles = StyleSheet.create({
     alignItems: 'center',
     paddingHorizontal: 24,
   },
+  logoutButton: {
+    flexDirection: 'row',
+    alignItems: 'center',
+  },
   logoutText: {
     fontSize: 15,
     fontFamily: FONTS.REGULAR,
-    color: COLORS.WHITE,
+    color: COLORS.GRAY_SECONDARY,
+    marginRight: 20,
   },
 });
