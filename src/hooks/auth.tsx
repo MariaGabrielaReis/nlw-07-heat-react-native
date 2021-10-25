@@ -64,7 +64,7 @@ function AuthProvider({ children }: AuthProviderProps) {
         const { user, token } = authResponse.data as AuthResponse;
         api.defaults.headers.common['Authorization'] = `Bearer ${token}`;
         await AsyncStorage.setItem(USER_STORAGE, JSON.stringify(user));
-        await AsyncStorage.setItem(TOKEN_STORAGE, JSON.stringify(token));
+        await AsyncStorage.setItem(TOKEN_STORAGE, token);
 
         setUser(user);
       }
